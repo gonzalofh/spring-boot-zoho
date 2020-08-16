@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.gonzalofh.zoho.autoconfigure.client.ZohoAuthClientAutoConfiguration,\
+com.gonzalofh.zoho.autoconfigure.client.ZohoClientsAutoConfiguration
