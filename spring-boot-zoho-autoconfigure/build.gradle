@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+repositories {
+    mavenLocal()
+    maven {
+        url = uri('https://repo.maven.apache.org/maven2')
+    }
+}
+
+dependencies {
+    compileOnly 'com.gonzalofh:spring-boot-zoho-reactive-client:0.0.1-SNAPSHOT'
+    compileOnly 'io.projectreactor.netty:reactor-netty:0.9.11.RELEASE'
+    compileOnly 'com.gonzalofh:zoho-domain:0.0.1-SNAPSHOT'
+    implementation 'org.springframework.boot:spring-boot-autoconfigure:2.3.3.RELEASE'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.3.3.RELEASE'
+    testImplementation 'io.projectreactor:reactor-test:3.3.9.RELEASE'
+}
+
+group = 'com.gonzalofh'
+version = '0.0.1-SNAPSHOT'
+description = 'spring-boot-zoho-autoconfigure'
+sourceCompatibility = '1.8'
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from(components.java)
+        }
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
