@@ -5,6 +5,7 @@ import java.util.regex.Pattern;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.util.UriComponentsBuilder;
 
@@ -34,6 +35,7 @@ public class ZohoAuthClient {
   }
 
   @Getter
+  @Setter
   @NoArgsConstructor
   public static class ZohoAuthProperties {
 
