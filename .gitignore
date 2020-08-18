@@ -1,5 +1,7 @@
 **/application-local.properties
 
+.DS_Store
+
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
@@ -32,3 +34,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Gradle ###
+.gradle
