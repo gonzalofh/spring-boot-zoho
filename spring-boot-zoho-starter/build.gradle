@@ -14,6 +14,7 @@ dependencies {
     implementation 'com.gonzalofh:spring-boot-zoho-autoconfigure:0.0.1-SNAPSHOT'
     implementation 'com.gonzalofh:zoho-domain:0.0.1-SNAPSHOT'
     implementation 'com.gonzalofh:spring-boot-zoho-reactive-client:0.0.1-SNAPSHOT'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
 }
 
 group = 'com.gonzalofh'
