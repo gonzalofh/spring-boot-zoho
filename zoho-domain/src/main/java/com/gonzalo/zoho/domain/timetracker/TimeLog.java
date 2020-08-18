@@ -1,7 +1,7 @@
 package com.gonzalo.zoho.domain.timetracker;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import java.util.Date;
+import java.time.LocalDate;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -27,7 +27,7 @@ public class TimeLog {
   private final String hours;
   private final String clientId;
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss.S")
-  private final Date db_workDate;
+  private final LocalDate db_workDate;
   private final int jobIsCompleted;
   private final String jobBillableStatus;
   private final int hoursInMins;
