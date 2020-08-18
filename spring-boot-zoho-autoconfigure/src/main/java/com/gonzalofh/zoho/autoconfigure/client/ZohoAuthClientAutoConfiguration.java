@@ -2,11 +2,17 @@ package com.gonzalofh.zoho.autoconfigure.client;
 
 import com.gonzalofh.zoho.auth.ZohoAuthClient;
 import com.gonzalofh.zoho.auth.ZohoAuthClient.ZohoAuthProperties;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.function.client.WebClient;
 
+/**
+ * {@link EnableAutoConfiguration Auto-configuration} for Zoho authorization client.
+ *
+ * @author Gonzalo Fernández
+ */
 @Configuration
 public class ZohoAuthClientAutoConfiguration {
 
